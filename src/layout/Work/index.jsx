@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import React, { useState } from "react";
+// import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 import { motion } from "framer-motion";
 
-import { AppWrap } from "../../wrapper";
+// import { AppWrap } from "../../wrapper";
 
 import "./index.scss";
 
 const Work = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [activeFilter] = useState("All");
+  const [animateCard] = useState({ y: 0, opacity: 1 });
 
   const categories = ["Web", "Mobile", "React", "All"];
 
