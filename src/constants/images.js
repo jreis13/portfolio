@@ -4,7 +4,6 @@ import api from "../assets/api.png";
 import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
 import figma from "../assets/figma.png";
-import flutter from "../assets/flutter.png";
 import git from "../assets/git.png";
 import graphql from "../assets/graphql.png";
 import html from "../assets/html.png";
@@ -18,10 +17,10 @@ import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 
-import about01 from "../assets/about01.png";
-import about02 from "../assets/about02.png";
-import about03 from "../assets/about03.png";
-import about04 from "../assets/about04.png";
+import work from "../assets/work.jpg";
+import location from "../assets/location.jpg";
+import subvisual from "../assets/subvisual.png";
+import polaroid from "../assets/polaroid.jpg";
 
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
@@ -42,7 +41,6 @@ export default {
   cpp,
   css,
   figma,
-  flutter,
   git,
   graphql,
   html,
@@ -55,10 +53,10 @@ export default {
   sass,
   typescript,
   vue,
-  about01,
-  about02,
-  about03,
-  about04,
+  work,
+  location,
+  subvisual,
+  polaroid,
   profile,
   circle,
   logo,

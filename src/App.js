@@ -1,6 +1,6 @@
 import React from "react";
 
-import { About, Footer, Header, Skills, Work } from "./layout";
+import { About, Footer, Hero, Skills, Work } from "./layout";
 import { Navbar } from "./components";
 
 import "./App.scss";
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <Header />
+      <Hero />
       <About />
       <Work />
       <Skills />
