@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 
+import { AppWrap } from "../../wrapper";
+
 import "./index.scss";
 
 const scaleVariants = {
@@ -71,4 +73,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AppWrap(Hero, "home");

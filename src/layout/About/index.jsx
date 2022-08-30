@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+import { AppWrap } from "../../wrapper";
+
 import { images } from "../../constants";
 
 import "./index.scss";
@@ -31,6 +33,9 @@ const facts = [
 const About = () => {
   return (
     <>
+      <h2 className="head-text">
+        More details <span>about me</span>
+      </h2>
       <div className="app__profiles">
         {facts.map((fact, index) => (
           <motion.div
@@ -54,4 +59,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
