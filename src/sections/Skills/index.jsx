@@ -5,7 +5,7 @@ import ReactTooltip from "react-tooltip";
 
 import { images } from "../../constants";
 
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 
 import "./index.scss";
 
@@ -94,4 +94,8 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills");
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
+);
