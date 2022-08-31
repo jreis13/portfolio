@@ -1,7 +1,8 @@
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
-import javascript from "../assets/javascript.png";
+
 import react from "../assets/react.png";
+import javascript from "../assets/javascript.png";
 import sass from "../assets/sass.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -20,13 +21,6 @@ import portfolio from "../assets/portfolio.png";
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
-
-import adidas from "../assets/adidas.png";
-import amazon from "../assets/amazon.png";
-import asus from "../assets/asus.png";
-import bolt from "../assets/bolt.png";
-import nb from "../assets/nb.png";
-import spotify from "../assets/spotify.png";
 
 // eslint-disable-next-line
 export default {
@@ -49,10 +43,4 @@ export default {
   css,
   git,
   figma,
-  adidas,
-  amazon,
-  asus,
-  bolt,
-  nb,
-  spotify,
 };
