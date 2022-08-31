@@ -1,26 +1,21 @@
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
-import api from "../assets/api.png";
-import cpp from "../assets/cpp.png";
-import css from "../assets/css.png";
-import figma from "../assets/figma.png";
-import git from "../assets/git.png";
-import graphql from "../assets/graphql.png";
-import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
-import mu5 from "../assets/mu5.png";
-import node from "../assets/node.png";
-import python from "../assets/python.png";
 import react from "../assets/react.png";
-import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
-import typescript from "../assets/typescript.png";
-import vue from "../assets/vue.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import git from "../assets/git.png";
+import figma from "../assets/figma.png";
 
 import work from "../assets/work.jpg";
 import location from "../assets/location.jpg";
 import subvisual from "../assets/subvisual.png";
 import polaroid from "../assets/polaroid.jpg";
+
+import thirsttrail from "../assets/thirsttrail.png";
+import wheel from "../assets/wheel.png";
+import portfolio from "../assets/portfolio.png";
 
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
@@ -31,40 +26,33 @@ import amazon from "../assets/amazon.png";
 import asus from "../assets/asus.png";
 import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
-import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
+// eslint-disable-next-line
 export default {
   email,
   mobile,
-  api,
-  cpp,
-  css,
-  figma,
-  git,
-  graphql,
-  html,
   javascript,
-  mu5,
-  node,
-  python,
   react,
-  redux,
   sass,
-  typescript,
-  vue,
   work,
   location,
   subvisual,
   polaroid,
+  thirsttrail,
+  wheel,
+  portfolio,
   profile,
   circle,
   logo,
+  html,
+  css,
+  git,
+  figma,
   adidas,
   amazon,
   asus,
   bolt,
   nb,
-  skype,
   spotify,
 };
