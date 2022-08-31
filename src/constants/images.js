@@ -22,6 +22,8 @@ import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
+import arrow from "../assets/arrow.png";
+
 // eslint-disable-next-line
 export default {
   email,
@@ -43,4 +45,5 @@ export default {
   css,
   git,
   figma,
+  arrow,
 };
