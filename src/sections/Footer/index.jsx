@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <div className="app__footer-social">
         <p className="bold-text">
-          You can also connect with me through my socials.
+          You can also connect with me through my socials
         </p>
         <div className="app__footer-arrow">
           <img src={images.arrow} alt="arrow" />

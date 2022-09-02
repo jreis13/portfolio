@@ -148,7 +148,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        Here are the <span>projects</span> I've contributed to.
+        Here are the <span>projects</span> I've contributed to
       </h2>
 
       <div className="app__work-filter">
