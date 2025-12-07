@@ -18,9 +18,9 @@ export function Hero() {
           </div>
 
           <p className="max-w-xl text-sm sm:text-base text-slate-300">
-            I design and build modern web experiences, focusing on clear
-            structure, calm visuals and realistic implementation from UI to
-            integration.
+            Designing and building modern web experiences while focusing on
+            clear structure, calm visuals and realistic implementation - from UI
+            to integration.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-sm">
@@ -81,18 +81,18 @@ export function Hero() {
             </p>
             <ul className="mt-3 space-y-1.5">
               <li className="flex items-start gap-2">
-                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400" />
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-400" />
                 <span>Designing and building web projects.</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 <span>
                   Exploring projects that mix data, interfaces and clear
                   storytelling.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400" />
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-indigo-400" />
                 <span>Open to collaborations and freelance work.</span>
               </li>
             </ul>

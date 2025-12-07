@@ -5,7 +5,6 @@ import { useState } from "react";
 const links = [
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
-  { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -15,7 +14,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="container flex items-center justify-center py-3 relative">
-        <a href="#top" className="absolute left-4 flex items-center">
+        <a href="#home" className="absolute left-4 flex items-center">
           <div className="h-9 w-9 rounded-full bg-linear-to-tr from-sky-400 to-emerald-400 flex items-center justify-center text-[0.8rem] font-bold text-slate-950 tracking-wider hover:scale-[1.1] active:scale-[0.95]">
             JR
           </div>

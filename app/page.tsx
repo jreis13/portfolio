@@ -4,7 +4,7 @@ import { About } from "@/components/About";
 
 export default function HomePage() {
   return (
-    <div id="top" className="min-h-screen bg-slate-950 text-slate-100">
+    <div id="home" className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
 
       <main>
