@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section id="about" className="py-20 sm:py-24">
+    <section id="about" className="py-12 sm:py-16">
       <div className="container grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-start">
         <div className="grid gap-4 order-2 md:order-1">
           <div className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90 hover:scale-[1.02]">

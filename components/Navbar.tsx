@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 const links = [
-  { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -13,29 +13,29 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
-      <div className="container flex items-center justify-center py-3 relative">
-        <a href="#home" className="absolute left-4 flex items-center">
-          <div className="h-9 w-9 rounded-full bg-linear-to-tr from-sky-400 to-emerald-400 flex items-center justify-center text-[0.8rem] font-bold text-slate-950 tracking-wider hover:scale-[1.1] active:scale-[0.95]">
+      <div className="container flex items-center justify-between py-3">
+        <a href="#home" className="flex items-center">
+          <div className="h-9 w-9 rounded-full bg-linear-to-tr from-sky-400 to-emerald-400 flex items-center justify-center text-[0.8rem] font-bold text-slate-950 tracking-wider hover:scale-[1.1] active:scale-[0.95] transition-transform">
             JR
           </div>
         </a>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300 py-2">
+        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="hover:text-sky-400 hover:scale-[1.03]"
+              className="hover:text-sky-400 hover:scale-[1.03] transition-transform"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="absolute right-4 hidden md:block">
+        <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="rounded-full hover:scale-[1.03] bg-linear-to-tr from-sky-400 to-emerald-400 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-slate-950 hover:opacity-90"
+            className="hidden md:inline-flex rounded-full bg-linear-to-tr from-sky-400 to-emerald-400 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-slate-950 hover:opacity-90 hover:scale-105 transition-transform"
           >
             Get in touch
           </a>
