@@ -32,9 +32,9 @@ export async function POST(request: Request) {
       subject: `New message from ${name}`,
       text: message,
       html: `<p><strong>Name:</strong> ${name}</p>
-<p><strong>Email:</strong> ${email}</p>
-<p><strong>Message:</strong></p>
-<p>${message.replace(/\n/g, "<br/>")}</p>`,
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message.replace(/\n/g, "<br/>")}</p>`,
     });
 
     return new Response(JSON.stringify({ ok: true }), {
