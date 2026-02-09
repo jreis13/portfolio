@@ -12,7 +12,7 @@ export function Projects() {
       description:
         "The new website of Medmark, Ireland's largest network of Occupational Health providers with clients across multiple sectors.",
       stack: ["Next.js", "Typescript", "Tailwind CSS"],
-      link: "https://medmark-five.vercel.app/",
+      link: "https://medmark-oh.vercel.app/",
     },
     {
       title: "Koi Route",
