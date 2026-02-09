@@ -27,15 +27,15 @@ export function Projects() {
         ],
         screenshots: [
           {
-            src: "/projects/medmark/medmark-ss1.png",
+            src: "/projects/Medmark/medmark-ss1.png",
             alt: "Hero + navigation",
           },
           {
-            src: "/projects/medmark/medmark-ss2.png",
+            src: "/projects/Medmark/medmark-ss2.png",
             alt: "Services modal / detail",
           },
           {
-            src: "/projects/medmark/medmark-ss3.png",
+            src: "/projects/Medmark/medmark-ss3.png",
             alt: "Clinics map + layout",
           },
         ],
