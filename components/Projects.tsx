@@ -15,14 +15,6 @@ export function Projects() {
       link: "https://medmark-oh.vercel.app/",
     },
     {
-      title: "Koi Route",
-      icon: KoiRouteIcon,
-      description:
-        "A web platform for simulating and planning autonomous flight routes, built with Next.js and custom UI components.",
-      stack: ["Next.js", "Tailwind CSS"],
-      link: "https://koi-route.vercel.app/",
-    },
-    {
       title: "Clean Craft",
       icon: CleanCraftIcon,
       description:
@@ -30,6 +22,15 @@ export function Projects() {
       stack: ["Next.js", "Typescript", "Tailwind CSS"],
       link: "https://clean-craft.vercel.app/",
     },
+    {
+      title: "Koi Route",
+      icon: KoiRouteIcon,
+      description:
+        "A web platform for simulating and planning autonomous flight routes, built with Next.js and custom UI components.",
+      stack: ["Next.js", "Tailwind CSS"],
+      link: "https://koi-route.vercel.app/",
+    },
+
   ];
 
   return (
