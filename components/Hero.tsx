@@ -37,6 +37,10 @@ export function Hero() {
               View projects
             </a>
             <a
+              style={{
+                backgroundImage:
+                  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+              }}
               href="#contact"
               className="rounded-full hover:scale-[1.03] active:scale-[0.98] border border-slate-600 px-5 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-200 hover:border-sky-400 hover:text-sky-300"
             >
