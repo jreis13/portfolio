@@ -2,7 +2,13 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-slate-800 bg-slate-950/90">
+    <footer
+      style={{
+        backgroundImage:
+          "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+      }}
+      className="border-t border-slate-800 bg-slate-950/90"
+    >
       <div className="container py-8 flex flex-col items-center gap-4 text-center">
         <div className="flex items-center gap-6 text-slate-400 text-sm">
           <a

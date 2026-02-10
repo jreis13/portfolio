@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Logo } from "./Logo";
 
 const links = [
   { href: "#skills", label: "Skills" },
@@ -12,13 +13,15 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+    <header
+      style={{
+        backgroundImage:
+          "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+      }}
+      className="fixed inset-x-0 top-0 z-40 border-b border-slate-800 bg-slate-950/80 backdrop-blur"
+    >
       <div className="container flex items-center justify-between py-3">
-        <a href="#home" className="flex items-center">
-          <div className="h-9 w-9 rounded-full bg-linear-to-tr from-sky-400 to-emerald-400 flex items-center justify-center text-[0.8rem] font-bold text-slate-950 tracking-wider hover:scale-[1.1] active:scale-[0.95] transition-transform">
-            JR
-          </div>
-        </a>
+        <Logo />
 
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
           {links.map((link) => (

@@ -37,8 +37,12 @@ export function Skills() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group) => (
             <div
+              style={{
+                backgroundImage:
+                  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+              }}
               key={group.title}
-              className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 hover:bg-slate-900/80 hover:border-sky-400/40 hover:scale-[1.02]"
+              className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 hover:bg-slate-900/80 hover:border-sky-400/40"
             >
               <h3 className="text-sm font-semibold text-slate-50 uppercase tracking-[0.18em]">
                 {group.title}

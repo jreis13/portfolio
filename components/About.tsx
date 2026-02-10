@@ -3,7 +3,13 @@ export function About() {
     <section id="about" className="py-12 sm:py-16">
       <div className="container grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-start">
         <div className="grid gap-4 order-2 md:order-1">
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90 hover:scale-[1.02]">
+          <div
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+            }}
+            className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90"
+          >
             <p className="text-xs uppercase tracking-[0.22em] text-slate-400">
               What I do
             </p>
@@ -13,7 +19,13 @@ export function About() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90 hover:scale-[1.02]">
+          <div
+            style={{
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
+            }}
+            className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90"
+          >
             <p className="text-xs uppercase tracking-[0.22em] text-slate-400">
               How I work
             </p>
