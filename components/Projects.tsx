@@ -21,7 +21,7 @@ export function Projects() {
         link: "https://medmark-oh.vercel.app/",
         recordings: [
           {
-            src: "/projects/medmark/medmark-sr.mp4",
+            src: "/projects/Medmark/medmark-sr.mp4",
             label: "Homepage walkthrough",
           },
         ],
