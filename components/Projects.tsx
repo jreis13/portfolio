@@ -21,7 +21,7 @@ export function Projects() {
         link: "https://medmark-oh.vercel.app/",
         recordings: [
           {
-            src: "/projects/medmark/medmark-sr.mp4",
+            src: "/projects/Medmark/medmark-sr.mp4",
             label: "Homepage walkthrough",
           },
         ],
@@ -72,7 +72,7 @@ export function Projects() {
         title: "Merrion OET Academy",
         icon: MerrionIcon,
         description:
-          "A web platform for simulating and planning autonomous flight routes, built with Next.js and custom UI components.",
+          "A modern, responsive OET preparation website built with Next.js and Tailwind CSS, designed for healthcare professionals.",
         stack: ["Next.js", "Tailwind CSS"],
         link: "https://merrion-oet.vercel.app/",
         recordings: [
