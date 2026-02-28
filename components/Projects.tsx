@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 
 import CleanCraftIcon from "@/public/projects/CleanCraft/CleanCraftIcon.png";
-import MerrionIcon from "@/public/projects/MerrionAcademy/MerrionIcon.png";
+import PortalIcon from "@/public/projects/evtolPortal/PortalIcon.png";
 import MedmarkIcon from "@/public/projects/Medmark/MedmarkIcon.webp";
 
 import { ProjectModal, type Project } from "@/components/ProjectModal";
@@ -69,26 +69,26 @@ export function Projects() {
         ],
       },
       {
-        title: "Merrion OET Academy",
-        icon: MerrionIcon,
+        title: "evtol Portal",
+        icon: PortalIcon,
         description:
-          "A modern, responsive OET preparation website built with Next.js and Tailwind CSS, designed for healthcare professionals.",
+          "A portal for managing and simulating eVTOL (electric Vertical Take-Off and Landing) aircraft operations.",
         stack: ["Next.js", "Tailwind CSS"],
-        link: "https://merrion-oet.vercel.app/",
+        link: "https://evtol-portal.vercel.app/",
         recordings: [
           {
-            src: "/projects/MerrionAcademy/ma-sr.mp4",
+            src: "/projects/evtolPortal/ep-sr.mp4",
             label: "Simulation UI flow",
           },
         ],
         screenshots: [
-          { src: "/projects/MerrionAcademy/ma-ss1.png", alt: "Landing / hero" },
+          { src: "/projects/evtolPortal/ep-ss1.png", alt: "Landing / hero" },
           {
-            src: "/projects/MerrionAcademy/ma-ss2.png",
+            src: "/projects/evtolPortal/ep-ss2.png",
             alt: "Simulations page",
           },
           {
-            src: "/projects/MerrionAcademy/ma-ss3.png",
+            src: "/projects/evtolPortal/ep-ss3.png",
             alt: "Simulations page",
           },
         ],
