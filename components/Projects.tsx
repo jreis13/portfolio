@@ -72,7 +72,7 @@ export function Projects() {
         title: "evtol Portal",
         icon: PortalIcon,
         description:
-          "A portal for managing and simulating eVTOL (electric Vertical Take-Off and Landing) aircraft operations.",
+          "A portal for managing and simulating eVTOL (electric Vertical Take-Off and Landing) aircraft operations, featuring real-time simulation engine.",
         stack: ["Next.js", "Tailwind CSS"],
         link: "https://evtol-portal.vercel.app/",
         recordings: [
