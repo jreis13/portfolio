@@ -78,18 +78,18 @@ export function Projects() {
         recordings: [
           {
             src: "/projects/evtolPortal/ep-sr.mp4",
-            label: "Simulation UI flow",
+            label: "Navigation walkthrough",
           },
         ],
         screenshots: [
           { src: "/projects/evtolPortal/ep-ss1.png", alt: "Landing / hero" },
           {
             src: "/projects/evtolPortal/ep-ss2.png",
-            alt: "Simulations page",
+            alt: "Overview",
           },
           {
             src: "/projects/evtolPortal/ep-ss3.png",
-            alt: "Simulations page",
+            alt: "Simulation Engine",
           },
         ],
       },
