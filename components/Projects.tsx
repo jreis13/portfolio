@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 
 import CleanCraftIcon from "@/public/projects/CleanCraft/CleanCraftIcon.png";
-import PortalIcon from "@/public/projects/evtolPortal/PortalIcon.png";
+import CuraIcon from "@/public/projects/Cura/CuraIcon.png";
 import MedmarkIcon from "@/public/projects/Medmark/MedmarkIcon.webp";
 
 import { ProjectModal, type Project } from "@/components/ProjectModal";
@@ -69,27 +69,27 @@ export function Projects() {
         ],
       },
       {
-        title: "evtol Portal",
-        icon: PortalIcon,
+        title: "Cura",
+        icon: CuraIcon,
         description:
-          "A portal for managing and simulating eVTOL (electric Vertical Take-Off and Landing) aircraft operations, featuring real-time simulation engine.",
-        stack: ["Next.js", "Tailwind CSS"],
-        link: "https://evtol-portal.vercel.app/",
+          "A modern healthcare discovery platform, helping users find the right clinic quickly through symptom-based search.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        link: "https://cura-io.vercel.app/",
         recordings: [
           {
-            src: "/projects/evtolPortal/ep-sr.mp4",
+            src: "/projects/Cura/cura-sr.mp4",
             label: "Navigation walkthrough",
           },
         ],
         screenshots: [
-          { src: "/projects/evtolPortal/ep-ss1.png", alt: "Landing / hero" },
+          { src: "/projects/Cura/cura-ss1.png", alt: "Landing / hero" },
           {
-            src: "/projects/evtolPortal/ep-ss2.png",
-            alt: "Overview",
+            src: "/projects/Cura/cura-ss2.png",
+            alt: "Extra details",
           },
           {
-            src: "/projects/evtolPortal/ep-ss3.png",
-            alt: "Simulation Engine",
+            src: "/projects/Cura/cura-ss3.png",
+            alt: "Results",
           },
         ],
       },
