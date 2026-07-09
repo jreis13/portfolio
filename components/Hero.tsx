@@ -11,7 +11,7 @@ export function Hero() {
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)]">
             I create digital experiences across websites, photography, video and
-            design — combining frontend development with visual storytelling.
+            design — combining web development with visual storytelling.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
