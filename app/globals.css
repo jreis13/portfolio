@@ -2,60 +2,64 @@
 
 :root {
   color-scheme: dark;
-}
-
-body {
-  min-height: 100vh;
-  background-color: #1e293b;
-  color: #f8fafc;
-  font-smooth: antialiased;
-}
-
-.container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.section-gradient {
-  background-image: radial-gradient(
-      circle at top,
-      rgba(56, 189, 248, 0.18),
-      transparent 60%
-    ),
-    radial-gradient(circle at bottom, rgba(34, 197, 94, 0.16), transparent 55%);
-}
-
-.card-glass {
-  background-color: rgba(15, 23, 42, 0.8);
-  border: 1px solid #1e293b;
-  border-radius: 1.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.tag-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  border-radius: 9999px;
-  border: 1px solid #475569;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  font-size: 0.75rem;
-  color: #d1d5db;
+  --background: #0d0d0b;
+  --foreground: #f3f0e8;
+  --muted: rgba(243, 240, 232, 0.62);
+  --border: rgba(243, 240, 232, 0.14);
+  --card: rgba(243, 240, 232, 0.06);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(243, 240, 232, 0.08), transparent 34rem),
+    var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
 * {
-  transition: all 0.2s ease;
-  user-select: none;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.container {
+  width: min(100% - 2rem, 1180px);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 1.5rem;
+}
+
+.pill {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.image-placeholder {
+  background:
+    linear-gradient(135deg, rgba(243, 240, 232, 0.18), rgba(243, 240, 232, 0.04)),
+    #171713;
+  border: 1px solid var(--border);
 }

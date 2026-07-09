@@ -1,56 +1,28 @@
 export function About() {
   return (
-    <section id="about" className="py-12 sm:py-16">
-      <div className="container grid gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] md:items-start">
-        <div className="grid gap-4 order-2 md:order-1">
-          <div
-            style={{
-              backgroundImage:
-                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
-            }}
-            className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90"
-          >
-            <p className="text-xs uppercase tracking-[0.22em] text-slate-400">
-              What I do
-            </p>
-            <p className="mt-2 text-sm text-slate-100">
-              Design and build modern web apps and landing pages, from structure
-              and layout to integrations and deployment.
-            </p>
-          </div>
+    <section id="about" className="container py-20">
+      <div className="grid gap-8 border-t border-[var(--border)] pt-8 md:grid-cols-[0.7fr_1.3fr]">
+        <p className="eyebrow">About</p>
 
-          <div
-            style={{
-              backgroundImage:
-                "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2300bcff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E\")",
-            }}
-            className="rounded-2xl border border-slate-800 bg-slate-900/80 p-4 sm:p-5 hover:border-sky-400/40 hover:bg-slate-900/90"
-          >
-            <p className="text-xs uppercase tracking-[0.22em] text-slate-400">
-              How I work
-            </p>
-            <p className="mt-2 text-sm text-slate-100">
-              Calm UI, clear hierarchy, readable code and a focus on what can be
-              shipped now while leaving space for future iterations.
-            </p>
-          </div>
-        </div>
-
-        <div className="space-y-4 order-1 md:order-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-400">
-            About
-          </p>
-
-          <h2 className="text-2xl sm:text-3xl font-semibold text-slate-50">
-            A developer who cares about structure, clarity and delivery.
+        <div>
+          <h2 className="text-4xl font-medium tracking-[-0.04em]">
+            I design, build and capture digital experiences.
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-300 max-w-xl">
-            I am a developer who enjoys turning ideas into clear, realistic web
-            experiences. <br /> I focus on clean layouts, calm visuals and
-            implementations that work within real constraints, from UI details
-            to API integrations.
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)]">
+            With a background in frontend development, I enjoy creating thoughtful
+            digital experiences through web design, photography and visual storytelling.
+            <br /> I'm constantly exploring new ways to combine technology and creativity to
+            build work that's both functional and visually engaging.
           </p>
+
+          <div className="mt-8 flex flex-wrap gap-2">
+            <span className="pill">Frontend</span>
+            <span className="pill">Photography</span>
+            <span className="pill">Video</span>
+            <span className="pill">Design</span>
+            <span className="pill">Social content</span>
+          </div>
         </div>
       </div>
     </section>

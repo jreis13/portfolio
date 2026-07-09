@@ -7,8 +7,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Joao Reis - Portfolio",
-  description: "Portfolio",
+  title: "João Francisco Reis",
+  description:
+    "Web, photography, design and visual storytelling by João Francisco Reis.",
 };
 
 export default function RootLayout({
@@ -17,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={spaceGrotesk.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={spaceGrotesk.className}>{children}</body>
     </html>
   );
 }
