@@ -9,7 +9,7 @@ export function Hero() {
             Web, photography & visual content with a sharp digital eye.
           </h1>
 
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)]">
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-(--muted)">
             I create digital experiences across websites, photography, video and
             design — combining web development with visual storytelling.
           </p>
@@ -17,13 +17,13 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#work"
-              className="rounded-full bg-[var(--foreground)] px-5 py-3 text-sm font-medium text-[var(--background)]"
+              className="rounded-full bg-(--foreground) px-5 py-3 text-sm font-medium text-(--background)"
             >
               View selected work
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-[var(--border)] px-5 py-3 text-sm font-medium text-[var(--foreground)]"
+              className="rounded-full border border-white/10 px-5 py-3 text-sm font-medium text-(--foreground)"
             >
               Contact me
             </a>

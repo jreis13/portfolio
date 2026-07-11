@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section id="about" className="container py-20">
-      <div className="grid gap-8 border-t border-[var(--border)] pt-8 md:grid-cols-[0.7fr_1.3fr]">
+      <div className="grid gap-8 border-t border-white/10 pt-8 md:grid-cols-[0.7fr_1.3fr]">
         <p className="eyebrow">About</p>
 
         <div>
@@ -9,7 +9,7 @@ export function About() {
             I design, build and capture digital experiences.
           </h2>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)]">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-(--muted)">
             With a background in web development, I enjoy creating thoughtful
             digital experiences through web design, photography and visual storytelling.
             <br /> I'm constantly exploring new ways to combine technology and creativity to

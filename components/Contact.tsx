@@ -11,7 +11,7 @@ export function Contact() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="mailto:joaofranciscoreis22@gmail.com"
-            className="rounded-full bg-[var(--foreground)] px-5 py-3 text-sm font-medium text-[var(--background)]"
+            className="rounded-full bg-(--foreground) px-5 py-3 text-sm font-medium text-(--background)"
           >
             Email me
           </a>
@@ -19,7 +19,7 @@ export function Contact() {
           <a
             href="https://www.instagram.com/satchi.ph"
             target="_blank"
-            className="rounded-full border border-[var(--border)] px-5 py-3 text-sm font-medium"
+            className="rounded-full border border-white/10 px-5 py-3 text-sm font-medium"
           >
             Instagram
           </a>
@@ -27,7 +27,7 @@ export function Contact() {
           <a
             href="https://www.linkedin.com/in/joao-francisco-reis"
             target="_blank"
-            className="rounded-full border border-[var(--border)] px-5 py-3 text-sm font-medium"
+            className="rounded-full border border-white/10 px-5 py-3 text-sm font-medium"
           >
             LinkedIn
           </a>

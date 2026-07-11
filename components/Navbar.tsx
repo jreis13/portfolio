@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 
 export function Navbar() {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-[var(--border)] bg-[rgba(13,13,11,0.82)] backdrop-blur-xl">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[rgba(13,13,11,0.82)] backdrop-blur-xl">
       <nav className="container flex h-16 items-center justify-between text-sm">
       <Link href="/" className="flex items-center gap-3">
         <Logo className="h-7 w-7" />
@@ -12,7 +12,7 @@ export function Navbar() {
         </span>
       </Link>
 
-        <div className="hidden gap-6 text-[var(--muted)] sm:flex">
+        <div className="hidden gap-6 text-(--muted) sm:flex">
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
