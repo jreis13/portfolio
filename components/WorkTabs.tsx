@@ -2,6 +2,7 @@
 
 import Image, { type StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight, X } from "lucide-react";
 
 const tabs = ["Selected", "Photography / Video", "Web", "Design"] as const;
 
@@ -293,9 +294,9 @@ export function WorkTabs({ photographyImages, webImages, designImages }: WorkTab
               type="button"
               onClick={closeProject}
               aria-label="Close project"
-              className="absolute right-4 top-4 z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-black/60 text-2xl text-white backdrop-blur-md transition hover:bg-white hover:text-black"
+              className="absolute right-4 top-4 z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-black/60 text-white backdrop-blur-md transition hover:bg-white hover:text-black"
             >
-              ×
+              <X size={20} strokeWidth={2} />
             </button>
 
             {galleryOpen ? (
@@ -321,18 +322,18 @@ export function WorkTabs({ photographyImages, webImages, designImages }: WorkTab
                         type="button"
                         onClick={showPreviousImage}
                         aria-label="Previous photograph"
-                        className="absolute left-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/55 text-3xl text-white backdrop-blur-md transition hover:bg-white hover:text-black md:left-6"
+                        className="absolute left-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/55 text-white backdrop-blur-md transition hover:bg-white hover:text-black md:left-6"
                       >
-                        ‹
+                        <ArrowLeft size={24} strokeWidth={2} />
                       </button>
 
                       <button
                         type="button"
                         onClick={showNextImage}
                         aria-label="Next photograph"
-                        className="absolute right-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/55 text-3xl text-white backdrop-blur-md transition hover:bg-white hover:text-black md:right-6"
+                        className="absolute right-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/55 text-white backdrop-blur-md transition hover:bg-white hover:text-black md:right-6"
                       >
-                        ›
+                        <ArrowRight size={24} strokeWidth={2} />
                       </button>
                     </>
                   )}
