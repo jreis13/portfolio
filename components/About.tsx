@@ -12,8 +12,8 @@ export function About() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-(--muted)">
             With a background in web development, I enjoy creating thoughtful
             digital experiences through web design, photography and visual storytelling.
-            <br /> I'm constantly exploring new ways to combine technology and creativity to
-            build work that's both functional and visually engaging.
+            <br /> I&apos;m constantly exploring new ways to combine technology and creativity to
+            build work that&apos;s both functional and visually engaging.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-2">
