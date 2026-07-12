@@ -25,6 +25,10 @@ import photo17 from "@/public/photos/P7070576_01.jpg";
 import photo18 from "@/public/photos/P7100617.jpg";
 import photo19 from "@/public/photos/P7100773_01.jpg";
 import photo20 from "@/public/photos/P7100777_01.jpg";
+import medmarkHomepage from "@/public/photos/medmarkHomepage.png"
+import cleanCraftHomepage from "@/public/photos/cleanCraftHomepage.png"
+import curaHomepage from "@/public/photos/curaHomepage.png"
+import raisinHomepage from "@/public/photos/raisinHomepage.png"
 
 const photographyImages = [
   photo1,
@@ -49,12 +53,22 @@ const photographyImages = [
   photo20,
 ];
 
+const webImages = [
+  medmarkHomepage,
+  cleanCraftHomepage,
+  raisinHomepage
+]
+
+const designImages = [
+  curaHomepage,
+]
+
 export default function HomePage() {
   return (
     <main>
       <Navbar />
-      <Hero />
-      <WorkTabs photographyImages={photographyImages} />
+      <Hero photographyImage={photographyImages[0]} designImage={designImages[0]} webImage={medmarkHomepage} />
+      <WorkTabs photographyImages={photographyImages} webImages={webImages} designImages={designImages} />
       <About />
       <Contact />
       <Footer />

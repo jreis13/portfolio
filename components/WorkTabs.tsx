@@ -14,87 +14,114 @@ type Project = {
   text: string;
   details?: string[];
   thumbnail?: string | StaticImageData;
+  website?: string;
   isPhotography?: boolean;
 };
 
 type WorkTabsProps = {
   photographyImages: StaticImageData[];
+  webImages: StaticImageData[];
+  designImages: StaticImageData[];
 };
 
-export function WorkTabs({ photographyImages }: WorkTabsProps) {
+export function WorkTabs({ photographyImages, webImages, designImages }: WorkTabsProps) {
   const [active, setActive] = useState<Tab>("Selected");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [imageIndex, setImageIndex] = useState(0);
 
-  const photographyProject: Project = {
+  const bjjProject: Project = {
     id: "bjj-photography",
-    title: "Sports imagery",
+    title: "BJJ photography and content",
     type: "Photography / Video",
     text: "Fast-paced BJJ photography, photo editing and social-first image selection.",
     thumbnail: photographyImages[0],
     isPhotography: true,
   };
 
+  const medmarkProject: Project = {
+    id: "medmark-website",
+    title: "Medmark website redesign",
+    type: "Web",
+    text: "Complete redesign and redevelopment of a nationwide healthcare provider's website using Next.js.",
+    details: [
+      "Rebuilt the website with reusable Next.js and TypeScript components.",
+      "Improved navigation, accessibility and responsive layouts across the site.",
+      "Managed deployment, domain migration and ongoing feature development.",
+    ],
+    thumbnail: webImages[0],
+    website: "https://www.medmark.ie",
+  };
+
+  const cleanCraftProject: Project = {
+    id: "clean-craft-website",
+    title: "Clean Craft brand & website",
+    type: "Web",
+    text: "Designed and developed a modern brand website for a new cleaning company entering the market.",
+    details: [
+      "Created the visual identity and website from concept to launch.",
+      "Designed a clean, trustworthy interface focused on lead generation.",
+      "Built a responsive Next.js website optimised for performance and SEO.",
+    ],
+    thumbnail: webImages[1],
+    website: "https://cleancraft.pt",
+  };
+
+  const raisinProject: Project = {
+    id: "raisin-website",
+    title: "Raisin website redesign",
+    type: "Web",
+    text: "Concept redesign for the Raisin natural wine platform, focusing on a cleaner interface and improved user experience.",
+    details: [
+      "Refreshed the visual identity with a cleaner, more premium aesthetic.",
+      "Improved page layouts, navigation and mobile responsiveness.",
+      "Built reusable components and a scalable frontend using Next.js.",
+    ],
+    thumbnail: webImages[2],
+    website: "https://raisin-wines.vercel.app",
+  };
+
+  const curaProject: Project = {
+    id: "cura-website",
+    title: "Cura concept design",
+    type: "Design",
+    text: "Web design concept exploring healthcare, UI design and modern frontend development.",
+    details: [
+      "Designed the user interface and overall product experience.",
+      "Built an interactive prototype using Next.js and TypeScript.",
+      "Explored dashboard design, accessibility and component-based architecture.",
+    ],
+    thumbnail: designImages[0],
+    website: "https://cura-io.vercel.app",
+  };
+
   const projects: Record<Tab, Project[]> = {
     Selected: [
-      {
-        id: "healthcare-website",
-        title: "Healthcare website rebuild",
-        type: "Web / UX",
-        text: "Full implementation focused on accessibility, structure and UX.",
-        details: [
-          "Complete redevelopment of the Medmark website using Next.js and TypeScript.",
-          "Improved navigation, accessibility and responsive behaviour.",
-          "Created reusable components to make future updates easier to manage.",
-        ],
-      },
-      photographyProject,
-      {
-        id: "social-media-direction",
-        title: "Social media direction",
-        type: "Content",
-        text: "Reels, carousels, content planning and visual identity for digital platforms.",
-        details: [
-          "Photography and visual content created for social media.",
-          "Content selection and editing based on platform and audience.",
-          "Consistent visual direction across posts and digital materials.",
-        ],
-      },
+      bjjProject,
+      medmarkProject,
+      curaProject
     ],
 
     "Photography / Video": [
       {
-        ...photographyProject,
-        title: "BJJ photography",
-        text: "Action, atmosphere and documentary imagery from Brazilian Jiu-Jitsu training.",
+        ...bjjProject,
       },
     ],
 
     Web: [
       {
-        id: "medmark-website",
-        title: "Medmark website work",
-        type: "Web",
-        text: "Next.js, UX improvements, page structure, components and deployment support.",
-        details: [
-          "Developed reusable frontend components using Next.js and TypeScript.",
-          "Improved page structure, responsiveness and accessibility.",
-          "Supported deployment, domains and ongoing website updates.",
-        ],
+        ...medmarkProject,
+      },
+      {
+        ...cleanCraftProject,
+      },
+      {
+        ...raisinProject,
       },
     ],
 
     Design: [
       {
-        id: "presentation-design",
-        title: "Presentation and content design",
-        type: "Design",
-        text: "Clean layouts, typography, hierarchy and branded visual systems.",
-        details: [
-          "Created structured presentation layouts with consistent typography.",
-          "Improved visual hierarchy and made information easier to understand.",
-          "Designed materials aligned with existing brand guidelines.",
-        ],
+        ...curaProject,
       },
     ],
   };
@@ -193,10 +220,10 @@ export function WorkTabs({ photographyImages }: WorkTabsProps) {
               role="tab"
               aria-selected={active === tab}
               onClick={() => setActive(tab)}
-              className={`cursor-pointer rounded-full px-4 py-2 text-sm transition ${
+              className={`cursor-pointer rounded-full border px-4 py-2 text-sm transition ${
                 active === tab
-                  ? "bg-(--foreground) text-(--background)"
-                  : "border border-white/10 text-(--muted) hover:text-(--foreground)"
+                  ? "border-transparent bg-(--foreground) text-(--background)"
+                  : "border-white/10 text-(--muted) hover:border-white/30 hover:text-(--foreground)"
               }`}
             >
               {tab}
@@ -210,8 +237,7 @@ export function WorkTabs({ photographyImages }: WorkTabsProps) {
               key={`${active}-${project.id}`}
               type="button"
               onClick={() => openProject(project)}
-              className="card group cursor-pointer p-5 text-left transition duration-300 hover:-translate-y-1 hover:border-[rgba(243,240,232,0.28)]"
-            >
+              className="card group flex h-full cursor-pointer flex-col items-stretch p-5 text-left align-top transition duration-300 hover:-translate-y-1 hover:border-[rgba(243,240,232,0.28)]"            >
               <div className="relative mb-5 aspect-4/3 overflow-hidden rounded-2xl border border-white/10 bg-(--card)">
                 {project.thumbnail ? (
                   <Image
@@ -363,6 +389,7 @@ export function WorkTabs({ photographyImages }: WorkTabsProps) {
                 >
                   {selectedProject.title}
                 </h3>
+                
 
                 <p className="mt-5 max-w-xl text-lg leading-8 text-(--muted)">
                   {selectedProject.text}
@@ -384,7 +411,19 @@ export function WorkTabs({ photographyImages }: WorkTabsProps) {
                         ))}
                       </div>
                     </div>
-                  )}
+                    )}
+                {selectedProject.website && (
+                  <div className="mt-10 border-t border-white/10 pt-7">
+                    <a
+                      href={selectedProject.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-full border border-white/10 px-4 py-2 text-sm font-medium transition hover:border-white/30 hover:bg-white/5"
+                    >
+                      Visit website
+                    </a>
+                  </div>
+                )}
               </div>
             )}
           </div>
